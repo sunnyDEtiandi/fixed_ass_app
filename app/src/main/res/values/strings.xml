@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">固定资产管理</string>
+    <string name="back">&lt; 返回</string>
+    <string name="load_data">选择盘点</string>
+    <string name="load_data_title">&lt;&#160;&#160;固定资产管理-->选择盘点</string>
+    <string name="check_data">进行盘点</string>
+    <string name="check_data_title">&lt;&#160;&#160;固定资产管理-->资产盘点</string>
+    <string name="inquiry_check">盘点查询</string>
+    <string name="inquiry_check_title">&lt;&#160;&#160;固定资产管理-->盘点结果</string>
+    <string name="inquiry_ass">资产查询</string>
+    <string name="inquiry_ass_title">&lt;&#160;&#160;固定资产管理-->资产查询</string>
+    <string name="export_data">导出盘点</string>
+
+    <string name="about_us">关于我们</string>
+    <string name="about_us_title">&lt;&#160;&#160;固定资产管理-->关于我们</string>
+    <string name="about_us_con">
+        \u3000\u3000西安向荣电子科技有限公司是西北地区一家专业的条形码服务、条形码系统解决方案和条形码
+        标签应用领域的高科技公司。本公司主要经营标签打印机、条码扫描器、数据采集器、证卡打印机
+        等一系列产品、耗材及计算机周边设备。公司致力于向用户提供高质量的产品，专业的技术支援及
+        优质的售后服务。伴随着IT行业的日益发展，本公司除了与POSTEK、TSC、ARGOX、GODEX、ZEBRA、
+        TEC、CITIZEN、SATO、DATAMAX、METROLOGIC、MOTOROLA等其它世界知名品牌的厂家建立了良好的
+        合作关系外，而且始终与行业的最新技术保持着一致。一切以客户的所想、所需为出发点，全心全意
+        为客户的需要而量身定做了一系列的专业服务，从可行性方案的设计、产品的安装、使用、调试、
+        售后、维护等。经过多年来的努力，公司以“诚信专业”的作风赢得了广大客户的认可和好评。
+        “保证质量，用户至上”是西安向荣电子科技有限公司一贯秉承的经营理念，公司将一如既往的为
+        每一位客户提供高质量而廉价的产品外，还将不断提供高效率而优质的服务！让客户真正感受到物
+        超所值！西安向荣电子科技有限公司全体员工将以热情的服务、完善的售后来恭候您的光临！
+    </string>
+
+    <string name="version">V 1.0.1</string>
+
+    <string name="menu">主菜单</string>
+    <string name="exit">退出</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="status_all">#5bc0de</color>
+    <color name="status_yes">#5cb85c</color>
+    <color name="status_no">#337ab7</color>
+    <color name="status_error">#f0ad4e</color>
+
+    <color name="list_seperator">#ff000000</color>
+
+    <color name="list_head">#2b95e1</color>
+
+    <color name="white">#ffffff</color>
+    <color name="font_color">#bcbaba</color>
+</resources>

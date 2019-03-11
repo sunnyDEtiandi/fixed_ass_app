@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="fixedass.barcode.com.fixed_ass_app.activity.AboutUsActivity">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:padding="15dp"
+        android:text="@string/about_us_title"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <!--<EditText
+        android:id="@+id/edt_url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:text="@string/about_us_con"
+        android:ellipsize="none"
+        android:editable="false"
+        android:padding="15dp"
+        android:inputType="none" />-->
+
+    <!--图标-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/version"
+        android:src="@drawable/xr" />
+    <!--版本号-->
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:text="@string/version"
+        android:textColor="@color/font_color"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:text="@string/check_data_title"/>
+
+    <LinearLayout
+        android:id="@+id/countDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_above="@+id/countPlace"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:enabled="false"
+            android:textColor="#000000"
+            android:text="盘点单位："/>
+
+        <Spinner
+            android:id="@+id/countDept_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/countPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_above="@+id/startCheck"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:enabled="false"
+            android:textColor="#000000"
+            android:text="盘点地址："/>
+
+        <Spinner
+            android:id="@+id/countPlace_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+    <Button
+        android:id="@+id/startCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="开始盘点"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical">
+
+    </ScrollView>
+
+</RelativeLayout>

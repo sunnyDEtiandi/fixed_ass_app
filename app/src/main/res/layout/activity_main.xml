@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fixedass.barcode.com.fixed_ass_app.activity.MainActivity">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">-->
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:text="@string/app_name"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/userName"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_toLeftOf="@+id/exitBtn"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+             />
+        <!--android:layout_toLeftOf="@+id/exitBtn"-->
+
+        <ImageView
+            android:id="@+id/exitBtn"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close1" />
+
+        <!--<Button
+            android:id="@+id/exitBtn"
+            android:layout_width="70dp"
+            android:layout_height="42dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:text="退出" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/loaddata"
+                android:layout_width="80dp"
+                android:layout_height="95dp"
+                android:layout_marginBottom="35dp"
+                android:src="@drawable/downtxt"/>
+            <ImageView
+                android:id="@+id/inquiryCheck"
+                android:layout_width="80dp"
+                android:layout_height="95dp"
+                android:layout_marginBottom="35dp"
+                android:src="@drawable/searchpdtxt"/>
+            <ImageView
+                android:id="@+id/exportData"
+                android:layout_width="80dp"
+                android:layout_height="95dp"
+                android:src="@drawable/uptxt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/checkData"
+                android:layout_width="80dp"
+                android:layout_height="95dp"
+                android:layout_marginBottom="35dp"
+                android:src="@drawable/scantxt"/>
+            <ImageView
+                android:id="@+id/inquiryAss"
+                android:layout_width="80dp"
+                android:layout_height="95dp"
+                android:layout_marginBottom="35dp"
+                android:src="@drawable/searchtxt"/>
+            <ImageView
+                android:id="@+id/aboutUs"
+                android:layout_width="80dp"
+                android:layout_height="95dp"
+                android:src="@drawable/helptxt"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

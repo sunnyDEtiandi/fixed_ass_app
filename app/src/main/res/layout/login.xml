@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/colorPrimary"
+        android:text="固定资产管理" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:text="登录" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/login"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:hint="用户名"/>
+
+    <EditText
+        android:id="@+id/passWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/userName"
+        android:layout_alignRight="@+id/userName"
+        android:layout_below="@+id/userName"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:imeOptions="actionGo"
+        android:hint="密码"/>
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:layout_below="@+id/passWord"
+        android:textSize="18sp"/>
+
+    <!--<Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/point"
+        android:layout_alignParentRight="true"
+        android:text="退出"/>-->
+
+    <!--<Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cancelBtn"
+        android:layout_toLeftOf="@+id/cancelBtn"
+        android:text="登录"/>
+-->
+    <ImageView
+        android:id="@+id/loginBtn"
+        android:layout_below="@+id/point"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/dengl"/>
+
+    <TextView
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/line"
+        android:clickable="true"
+        android:text="@string/exit"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="1dip"
+        android:layout_height="15dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/line"
+        android:layout_alignParentBottom="true"
+        android:text="设置"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</RelativeLayout>

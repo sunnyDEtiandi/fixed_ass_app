@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:text="@string/inquiry_check_title"/>
+
+    <LinearLayout
+        android:id="@+id/selectCon"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/back"
+        android:background="@color/font_color"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="盘点状态："
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/countStatu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hs_inquiry_hslist"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <include
+                android:id="@+id/include_inquiry_lvhead"
+                layout="@layout/list_item_count" />
+
+            <fixedass.barcode.com.fixed_ass_app.view.ListViewEx
+                android:id="@+id/lv_inquiry_lvBarcodeList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/list_item_foucsed"
+                android:cacheColorHint="@android:color/transparent"
+                android:layout_below="@id/include_inquiry_lvhead" >
+            </fixedass.barcode.com.fixed_ass_app.view.ListViewEx>
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

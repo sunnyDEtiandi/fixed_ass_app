@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDECEC"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:text="@string/load_data_title"/>
+
+    <LinearLayout
+        android:id="@+id/changeAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add"
+        android:orientation="horizontal"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:enabled="false"
+            android:textColor="#000000"
+            android:text="盘点单号："/>
+
+        <EditText
+            android:id="@+id/countBillCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="点击盘点单号所在行进行选择"
+            android:ellipsize="none"
+            android:enabled="false"
+            android:textColor="@color/list_seperator"
+            android:inputType="none"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/hs_query_hslist"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <include
+                android:id="@+id/include_query_lvhead"
+                layout="@layout/list_item_load" />
+
+            <fixedass.barcode.com.fixed_ass_app.view.ListViewEx
+                android:id="@+id/lv_query_lvBarcodeList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/list_item_foucsed"
+                android:cacheColorHint="@android:color/transparent"
+                android:layout_below="@id/include_query_lvhead" >
+            </fixedass.barcode.com.fixed_ass_app.view.ListViewEx>
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
